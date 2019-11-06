@@ -13,7 +13,7 @@ names(WCSP) <- c("WC_ID", "species")
 WCSP$species <- gsub("_", " ", WCSP$species)
 WCSP1 <- WCSP %>% select(species, WC_ID)
 
-Tmp_table <- lookup_table(unique(WCSP$Accepted_Species), by_species=TRUE)
+Tmp_table <- lookup_table(unique(WCSP$species), by_species=TRUE)
 APG_table <- Tmp_table %>% mutate(species=row.names(Tmp_table)) %>% select(species, genus, family, order, group)
 write_csv(APG_table, "../results/WCSP_APG_lookup.csv")
 
