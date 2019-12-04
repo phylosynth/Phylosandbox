@@ -1,6 +1,6 @@
 # Phylosandbox
 
-# [Phylosynth](https://github.com/phylosynth)
+# [Phylosynth](https://github.com/phylosynth)![logo](./image/PhyloSynth.jpg)
 
 We are marching on Phylosynth project! Some primary data, code and results will share here. Our goal is reconstructing [**a larger-scale plant Tree of Life**](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.1041) for all [seed plants (Spermatophyta)](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=58024), using methods described in [Smith and Brown (2018)](https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/ajb2.1019), and integrating the phylogentic backbone from  [the Plant and Fungal Trees of Life Project (PAFTOL)](https://www.kew.org/science/our-science/projects/plant-and-fungal-trees-of-life) and robust taxonomy database from [World Checklist of Selected Plant Families (WCSP)](https://wcsp.science.kew.org/home.do). We endeavor to push the boundary of the knowledge of Tree of Life, keeping this tree portable and dynamically updated, providing knowledge of the plant tree of life to science community and the public education.  
 
