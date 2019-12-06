@@ -120,8 +120,9 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 
 - [] **Tree grafting**
 - [] **Psedu-posterior**  
-	- [TACT (Taxonomic Addition for Complete Trees)](https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syz081/5658637): 
+	- [TACT (Taxonomic Addition for Complete Trees)](https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syz081/5658637):  
 		_A new stochastic polytomy resolution method that uses birth-death-sampling estimators across an ultrametric phylogeny to estimate branching times for unsampled taxa, with taxonomic information to compatibly place new taxa onto a backbone phylogeny._  
+		
 		[TACT](https://github.com/jonchang/tact/) is also used in [Rabosky et al. (2018)](https://www.nature.com/articles/s41586-018-0273-1)  
 - [] **How to integrate uncertainty**  
       ![Wolf_brainstorm](./image/brainstorm_wolf.png)
