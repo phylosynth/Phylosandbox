@@ -1,16 +1,16 @@
 # Phylosandbox
 
-<center>  
+#<center>
 ![logo](./image/PhyloSynth.jpg)
-</center> 
+#</center>
 
 # [Phylosynth](https://github.com/phylosynth)
 
 We are marching on Phylosynth project! Some primary data, code and results will share here. Our goal is reconstructing [**a larger-scale plant Tree of Life**](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.1041) for all [seed plants (Spermatophyta)](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=58024), using methods described in [Smith and Brown (2018)](https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/ajb2.1019) and ideas described in [Eiserhardt et al. (2018; see below)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/ajb2.1041), and integrating the phylogenetic backbone from  [the Plant and Fungal Trees of Life Project (PAFTOL)](https://www.kew.org/science/our-science/projects/plant-and-fungal-trees-of-life) and robust taxonomy database from [World Checklist of Selected Plant Families (WCSP)](https://wcsp.science.kew.org/home.do). We endeavor to push the boundary of the knowledge of Tree of Life, keeping this tree portable and dynamically updated, providing knowledge of the plant tree of life to science community and the public education.  
 
-<center>  
+#<center>  
 ![Pipeline Schema from [Eiserhardt et al. (2018)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/ajb2.1041)](./image/work_flow.png)  
-</center>
+#</center>
 
 ### [Some key feactures](https://docs.google.com/document/d/1Hb-G9_WXhCpTpv7mpXrcS_UOH7giolAgjk9nBsRaL50):
 
@@ -95,7 +95,7 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
           _Details see the comments inside the script._  
           e.g., _Remove species with `cf.` and `aff.` tags_  
           _Remove `Genus_sp._Collection#`_  
-			  	_Keep it if the frequency of the genus equals to 1, for place holder_  
+          _Keep it if the frequency of the genus equals to 1, for place holder_  
           
         
         `remove_duplicate.py`  
@@ -127,9 +127,9 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 	
 	* Alternative --- [supersmartR](https://github.com/AntonelliLab/supersmartR)  
 	      o. Comparison of supersmartR and PyPHLAWD by Dom Bennet, Miao Sun, and Wolf Eiserhardt  
-    <center>  
+    #<center>  
     ![example](./image/Comparison_PyPHLAWD_SuperSmartR.jpg)  
-    </center> 
+    #</center> 
 	
 2. [x] **_Fossil data_**
 	* [Magallón et al. (2015)](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.13264)
@@ -190,9 +190,9 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
     + Name checking service  
     + Coommon namce and nickname (_public not necessary know/use the scientific names_)  
       example: [Phylotastic](https://phylo.cs.nmsu.edu/)  
-      <center>  
+      #<center>  
       ![example](./image/Phylotastic.png)  
-      </center> 
+      #</center> 
     
 
 + Subtle:  
