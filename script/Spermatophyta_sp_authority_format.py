@@ -3,6 +3,7 @@
 InFile = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_nodupl.csv", 'r')
 #InFile = open("test_data.csv", 'r')
 outfile = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_uniq_clean.csv", "w")
+outfile2 = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_unnamed_hybrids.csv", "w")
 LineNumber = 0
 UU = ["family", "order", "genus"]
 QQ = ["species", "subspecies", "varietas", "forma"]
@@ -10,7 +11,7 @@ QQ = ["species", "subspecies", "varietas", "forma"]
 for Line in InFile:
     if LineNumber > 0:
         Line=Line.strip('\n')
-        #break up csv elements
+#break up csv elements
         LineList=Line.split(',')
         ID = str(LineList[0]) #nibi id
         Rank = str(LineList[1]) #taxonomic names
@@ -19,34 +20,38 @@ for Line in InFile:
         Authority = ''
         tt = len(spbits) #total number of elements in the taxonomic names after parsing
         
-        #ranks
+#ranks
         if tt >= 1 and Signal in UU:
             Rank = spbits[0]
             Authority = '_'.join(spbits[1:])
             outline=[str(ID), str(Rank), str(Authority), str(Signal)]
             #print Rank+','+Authority
             outfile.write(",".join(outline)+"\n")
-            #species
+#species
         elif tt >= 2 and Signal in QQ:
-            #species no authority case
+    #species no authority case
             if tt ==2:
                 Rank = '_'.join(spbits)
-                #Authority = ''
                 outline=[str(ID), str(Rank), str(Authority), str(Signal)]
                 outfile.write(",".join(outline)+"\n")
-                #genus_sp. case
+    #genus_sp. case
             elif "sp." in spbits:
                 Rank = spbits[0]+'_'+spbits[1]
+                outline=[str(ID), str(Rank), str(Authority), str(Signal)]
+                outfile.write(",".join(outline)+"\n")
+    #hybrids case
+            elif "x" in spbits:
+    #valid hybrid names
+                if spbits[1] == "x":
+                    Rank = '_'.join(spbits[:3])
+                    Authority = '_'.join(spbits[3:])
                     outline=[str(ID), str(Rank), str(Authority), str(Signal)]
                     outfile.write(",".join(outline)+"\n")
-                    #hybrids
-            elif "x" in spbits:
-                if tt ==3 :
-                elif == 5:
-                    #Rank = spbits[0]+'_'+spbits[1]
-                    #outline=[str(ID), str(Rank), str(Authority), str(Signal)]
-                    #outfile.write(",".join(outline)+"\n")
-                    #subspecies level
+                else:
+                    Rank = '_'.join(spbits)
+                    outline=[str(ID), str(Rank), str(Authority), str(Signal)]
+                    outfile2.write(",".join(outline)+"\n")
+    #subspecies level
             elif "var." in spbits or "f." in spbits or "subsp." in spbits:
                 if tt == 4:
                     Rank = '_'.join(spbits)
@@ -67,4 +72,5 @@ for Line in InFile:
     LineNumber = LineNumber + 1
 InFile.close()
 outfile.close()
+outfile2.close()
 
