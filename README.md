@@ -1,16 +1,16 @@
 # Phylosandbox
 
-
+<center>  
 ![logo](./image/PhyloSynth.jpg)
-
+</center> 
 
 # [Phylosynth](https://github.com/phylosynth)
 
 We are marching on Phylosynth project! Some primary data, code and results will share here. Our goal is reconstructing [**a larger-scale plant Tree of Life**](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.1041) for all [seed plants (Spermatophyta)](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=58024), using methods described in [Smith and Brown (2018)](https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/ajb2.1019) and ideas described in [Eiserhardt et al. (2018; see below)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/ajb2.1041), and integrating the phylogenetic backbone from  [the Plant and Fungal Trees of Life Project (PAFTOL)](https://www.kew.org/science/our-science/projects/plant-and-fungal-trees-of-life) and robust taxonomy database from [World Checklist of Selected Plant Families (WCSP)](https://wcsp.science.kew.org/home.do). We endeavor to push the boundary of the knowledge of Tree of Life, keeping this tree portable and dynamically updated, providing knowledge of the plant tree of life to science community and the public education.  
 
-  
+<center>  
 ![Pipeline Schema from [Eiserhardt et al. (2018)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/ajb2.1041)](./image/work_flow.png)  
-
+</center>
 
 ### [Some key feactures](https://docs.google.com/document/d/1Hb-G9_WXhCpTpv7mpXrcS_UOH7giolAgjk9nBsRaL50):
 
@@ -39,7 +39,7 @@ We are marching on Phylosynth project! Some primary data, code and results will 
       Establish a procedure for user feedback. This would need to include a procedure for storing decisions/annotations and avoiding duplication of effort. 
 
 
-The general workingflow key points are outlined below.  
+The general workingflow is outlined below.  
 
 All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/tree/master/script).  
 
@@ -95,7 +95,7 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
           _Details see the comments inside the script._  
           e.g., _Remove species with `cf.` and `aff.` tags_  
           _Remove `Genus_sp._Collection#`_  
-          _Keep it if the frequency of the genus equals to 1, for place holder_  
+			  	_Keep it if the frequency of the genus equals to 1, for place holder_  
           
         
         `remove_duplicate.py`  
@@ -121,16 +121,15 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 - [] **Data mining**  
 
 1. [] **_Molecular data_**  
-	* GenBank data mining using [PyPHLAWD](https://github.com/FePhyFoFum/PyPHLAWD)  
-	* Divided and Conquer _(the finer divide scale the better; improved the tree phylogenetic resolution)_  
+	* GenBank data mining using [PyPHLAWD](https://github.com/FePhyFoFum/PyPHLAWD)
 	* Choose gene with most coverage _(the good clusters)_  
 	* Sequence length  
 	
 	* Alternative --- [supersmartR](https://github.com/AntonelliLab/supersmartR)  
 	      o. Comparison of supersmartR and PyPHLAWD by Dom Bennet, Miao Sun, and Wolf Eiserhardt  
-      
+    <center>  
     ![example](./image/Comparison_PyPHLAWD_SuperSmartR.jpg)  
-     
+    </center> 
 	
 2. [x] **_Fossil data_**
 	* [Magallón et al. (2015)](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.13264)
@@ -142,9 +141,9 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 	* Tropicality?  
 
 - [] **Data cleaning and evaluation**  
-    * Sequence data cleaning  
-    * Taxonomic names cleaning  
-    * Topology constraint  
+    * Sequence data cleaning
+    * Taxonomic names cleaning
+    * Topology constraint
     * Monophyletic constraint  
   
 - [] **Phylogeny and dating**
@@ -191,9 +190,9 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
     + Name checking service  
     + Coommon namce and nickname (_public not necessary know/use the scientific names_)  
       example: [Phylotastic](https://phylo.cs.nmsu.edu/)  
-        
+      <center>  
       ![example](./image/Phylotastic.png)  
-       
+      </center> 
     
 
 + Subtle:  
@@ -203,7 +202,8 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 * Likewise scripts go to "script" foder  
 * Draw a diagram for workingflow
 * More detailed description for methods used  
+* Data storage: [Zenodo](https://zenodo.org/) and/or [github](https://github.com/)  
 
 Last update:  
-_Tue Dec 19 10:33:34 2019_  
+_Fri Jan  3 14:33:34 2020_  
 
