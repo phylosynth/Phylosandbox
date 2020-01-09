@@ -1,9 +1,9 @@
 #!/bin/python
 
-InFile = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_nodupl.csv", 'r')
+InFile = open("../results/Spermatophyta58024_plnDB01032020_nodupl.csv", 'r')
 #InFile = open("test_data.csv", 'r')
-outfile = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_uniq_clean.csv", "w")
-outfile2 = open("../results/Spermatophyta58024_plnDB_pyphlawd11142019_unnamed_hybrids.csv", "w")
+outfile = open("../results/Spermatophyta58024_plnDB_pyphlawd01032020_reformated.csv", "w")
+outfile2 = open("../results/Spermatophyta58024_plnDB_pyphlawd01032020_unnamed_hybrids.csv", "w")
 LineNumber = 0
 UU = ["family", "order", "genus"]
 QQ = ["species", "subspecies", "varietas", "forma"]

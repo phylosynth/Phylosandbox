@@ -11,7 +11,7 @@ def outSpp(Order,Family,Genus,Species_Count):
 		OutSpecisRich.write(",".join(OutList)+"\n")
 
 #Open the file contains the data
-InFileName = "../results/Spermatophyta_plnDB_clean2.csv"
+InFileName = "../results/Spermatophyta58024_plnDB_pyphlawd01032020_reformated.csv"
 InFile = open(InFileName, 'r')
 
 HeaderLine = 'Order,Family,Genus,Species_Count'
