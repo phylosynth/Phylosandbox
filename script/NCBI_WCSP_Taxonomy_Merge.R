@@ -38,15 +38,12 @@ remain.names.data <- NCBI.data[-grep(" sp\\.", NCBI.data$scientificName),]
 # WCSP[293732,3] == "Species" && WCSP[293736,10] == "Species"
 
 library("Taxonstand")
-tt <- TPL(remain.names.data$scientificName, infra=TRUE)
+unmatch.data <- TPL(remain.names.data$scientificName, infra=TRUE)
 
-write.csv(tt, "./results/NCBI_sequence_name_unmatch_TPL.01062020.csv")
+write.csv(unmatch.data, "./results/NCBI_sequence_name_unmatch_TPL.01062020.csv")
 
-tt <- read_csv("./results/NCBI_sequence_name_unmatch_TPL.01062020.csv", col_names = T)
-
-tt_NA <- tt %>% group_by(New.Taxonomic.status) %>% filter(New.Taxonomic.status=="Unresolved")
-
-unmatch.data <- head(tt, n=100)
+# ####uncomment this for test first 100 rows
+# unmatch.data <- head(tt, n=100)
 
 
 for(i in 1:dim(unmatch.data)[1]){
@@ -142,6 +139,3 @@ for(i in 1:dim(unmatch.data)[1]){
 # <chr> <chr> <chr>         <chr>   <chr>  <chr>            <chr>         <chr>     <chr> <lgl>           
 #   1 Arqu… Arqu… NA            tricho… NA     var.             trichocarpa   NA        NA    FALSE           
 # # … with 15 more variables: TPL.version <dbl>, Taxonomic.status <chr>, Family <chr>, New.Genus <chr>,
-# #   New.Hybrid.marker <chr>, New.Species <chr>, New.Infraspecific.rank <chr>, New.Infraspecific <chr>,
-# #   New.Authority <chr>, New.ID <chr>, New.Taxonomic.status <chr>, Typo <lgl>, WFormat <lgl>,
-#   Higher.level <lgl>, Date <date>
