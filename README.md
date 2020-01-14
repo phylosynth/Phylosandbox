@@ -204,5 +204,5 @@ All the scripts can be found [here](https://github.com/phylosynth/Phylosandbox/t
 * More detailed description for methods used  
 
 Last update:  
-_Fri Jan  3 14:33:34 2020_  
+_Fri Jan  14 14:33:34 2020_  
 
