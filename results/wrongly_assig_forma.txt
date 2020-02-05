@@ -1,0 +1,11 @@
+2489308	|	2489307	|	Echeveria bella var. major E.Walther, 1972	|	forma	|	
+452974	|	1897101	|	Camellia semiserrata var. albiflora H.H.Hu & T.C.Huang	|	forma	|	
+1287642	|	1287647	|	Acer pictum var. connivens G.Nicholson	|	forma	|	
+323853	|	323852	|	Prunus persica var. compressa (Loudon) Bean	|	forma	|	
+258216	|	258215	|	Sagittaria sagittifolia var. longiloba Turcz.	|	forma	|	
+651082	|	454001	|	Juniperus squamata subsp. wilsonii (Rehder) Silba	|	forma	|	
+416995	|	413755	|	Diospyros atrata (Thwaites) Alston	|	forma	|	
+642533	|	642532	|	Pyrola subaphylla Maxim.	|	forma	|	
+1964825	|	1211603	|	Prunus macrocarpa Wallr., 1822	|	forma	|		
+564605	|	242627	|	Limodorum trabutianum subsp. brulloi (Bartolo & Pulv.) H.Baumann & R.Lorenz	|	forma	|	
+4536	|	4530	|	Oryza nivara S.D.Sharma & Shastry	|	forma	|	

@@ -1,0 +1,10 @@
+702087	|	3435	|	Persea americana var. costaricensis Ben-Ya'akov et al., nom. inval.	|	no rank	|	
+702089	|	3435	|	Persea americana var. americana x 'guatemalensis'	|	no rank	|	
+702088	|	3435	|	Persea americana var. guatemalensis (L.O.Williams) Scora, 2002	|	no rank	|	
+2039777	|	1210925	|	Salvia mexicana var. minor 'forma alba'	|	no rank	|	
+941588	|	4045	|	Apium graveolens var. secalinum Alef.	|	no rank	|	
+117781	|	4045	|	Apium graveolens var. dulce (Mill.) Pers.	|	no rank	|		
+929720	|	213599	|	Coccinia adoensis var. aurantiaca NH-2011	|	no rank	|	
+547796	|	3760	|	Prunus persica x Prunus persica var. nucipersica	|	no rank	|	
+1520659	|	106445	|	Dyckia estevesii var. 'braunii' HD 602437	|	no rank	|	
+1736656	|	39947	|	Oryza sativa var. javanica Koern.	|	no rank	|	
