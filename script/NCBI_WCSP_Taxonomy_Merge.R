@@ -5,10 +5,25 @@ library("tidyverse")
 #reading in tables
 
 WCSP <- read_csv("results/powoNames.csv", col_names = T)
+# > length(unique(WCSP$family))
+# [1] 458
+# > length(unique(WCSP$genus))
+# [1] 39229
+# > length(unique(WCSP$scientificName))
+# [1] 1097223
+
 NCBI <- read_csv("results/Spermatophyta_clean01062020.csv", col_names = T)
 #modify the shared species column to join the two tables
 names(NCBI)[4] <- "scientificName"
 NCBI$scientificName <- gsub("_", " ", NCBI$scientificName)
+
+# > length(unique(NCBI$Family))
+# [1] 457
+# > length(unique(NCBI$Genus))
+# [1] 12987
+# > length(unique(NCBI$scientificName))
+# [1] 152385 including sp. about 13.89% of WCSP
+
 
 #join the tables
 WCSP_NCBI_cmb <- left_join(WCSP, NCBI, by="scientificName")
