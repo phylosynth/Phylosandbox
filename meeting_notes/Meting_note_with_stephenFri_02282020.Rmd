@@ -1,0 +1,31 @@
+---
+title: "Meting note with Stephen"
+author: "Miao"
+date: "2/29/2020"
+output: html_document
+---
+We have discussed some specific tasks for the project when Stephen is away to UK.  
+
+## The backbone tree
+
+1. Is the backbone tree from the Plant and Fungal Trees of Life Project (PAFTOL) ready?  
+  _Confirm with Wolf_  
+2. If not, so we are going to use the backbone tree from Magallón et al. (2015)  
+
+  + _Miao will compare faimly list in Magallón et al. (2015) and family list from WCSP to make sure if all the families are represented._  
+
+  + _Make a survey (plot) for all the seed plant families based on their size._
+
+
+## Complete Arecaceae and Ericaceae cases
+
+Now the two ML trees are finished for both Arecaceae and Ericaceae, we need to applid all the steps to these two examples, and then amplify to the whole seed plant families
+
+1. Miao will check both Arecaceae and Ericaceae tree to make better constrait topologies  
+
+2. Make a script for **monophyletic checking** [some functions in R packages; checking Pyphlawd?], then report which node, what species are  
+3. Best ML tree can start from 5 or 10, may increase later; also the ML search will be optmized in later steps as well (BS-like or Quartet score from Pease et al. [2018]).  
+
+## Meeting schedule
+
+  _Meeting with Stephen weekly (Tuesday/Wedsday), and skyping with Wolf every other week (depends on each's scedules)_  
