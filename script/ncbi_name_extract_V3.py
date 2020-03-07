@@ -7,6 +7,8 @@ DB = "plnDB20191101.db"
 conn = sqlite3.connect(DB)
 c = conn.cursor()
 
+outfile = open("Spermatophyta_plnDB_02012020.txt", "w")
+
 sqlcmd = "SELECT ncbi_id,parent_ncbi_id,name,node_rank FROM taxonomy WHERE name_class = 'scientific name' OR name_class = 'authority'"
 c.execute(sqlcmd)
 
@@ -53,8 +55,8 @@ for i in data:
 stack = [targetid]
 while len(stack) > 0:
     tempid = stack.pop()
-    #outfile.write(tempid+"\t|\t"+pid[tempid]+"\t|\t"+nid[tempid]+"\t|\t"+nrank[tempid]+"\n")
-    print(tempid+"\t|\t"+pid[tempid]+"\t|\t"+nid[tempid]+"\t|\t"+nrank[tempid]+"\t|\t")
+    outfile.write(tempid+"\t|\t"+pid[tempid]+"\t|\t"+nid[tempid]+"\t|\t"+nrank[tempid]+"\n")
+    #print(tempid+"\t|\t"+pid[tempid]+"\t|\t"+nid[tempid]+"\t|\t"+nrank[tempid]+"\t|\t")
     if tempid in cid:
         for j in cid[tempid]:
             stack.append(j)
